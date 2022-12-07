@@ -6,7 +6,7 @@ public class Constructor {
         // Intialized Parameterized Constructor
         Constructor(int x, int y){
             int z = x + y;
-            System.out.println("X + Y = "+ z);   
+            System.out.println(x + " + " + y + " = " + z);   
         }
         public static void main(String[] args) {
             //This is Default Constructor
