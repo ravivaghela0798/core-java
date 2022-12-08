@@ -1,4 +1,4 @@
-public class Array {
+public class ArrayProgram {
     public static int findIndex(int[] array, int t) {
         if (array == null)
             return -1;
