@@ -2,6 +2,14 @@ public class Static {
     int id;
     String name;
     static String college = "HNGU";
+    {
+        System.out.println("static block called...");
+    }
+
+    static String getName(String name){
+        System.out.println(name);
+        return name;
+    }
 
     Static(int i, String n){
         id = i;
@@ -17,5 +25,6 @@ public class Static {
         Static s2 = new Static(2, "Deipak Parmar");
         s1.res();
         s2.res();
+        Static.getName("Juned");
     }
 }
