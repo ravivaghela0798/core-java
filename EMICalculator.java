@@ -1,4 +1,9 @@
+/*
+ * calculate EMI using Class, Object, Variables, Operators, and Datatypes
+ */
+
 public class EMICalculator {
+
     public float getEMI(float principal, float rate, float time) {
         float emi;
         rate = rate / (12 * 100); // one month interest
@@ -13,7 +18,8 @@ public class EMICalculator {
         rate = 10;
         time = 2;
 
-        EMICalculator emi = new EMICalculator();
-        System.out.println("Monthly EMI is = " + emi.getEMI(principal, rate, time));
+        EMICalculator emiObject = new EMICalculator();
+        System.out.println("Monthly EMI is = " + emiObject.getEMI(principal, rate, time));
     }
+
 }

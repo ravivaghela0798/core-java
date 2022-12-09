@@ -1,4 +1,10 @@
+/*
+ * extends shape abstract method and override method from Shape abstract class 
+ * and provide implementation in this Circle class
+ */
+
 class Circle extends Shape {
+
     double radius;
 
     Circle(String color, double radius) {
@@ -16,4 +22,5 @@ class Circle extends Shape {
     public String toString() {
         return "Circle color is " + super.getColor() + "and area is : " + area();
     }
+
 }

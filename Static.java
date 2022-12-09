@@ -1,9 +1,15 @@
+/*
+ * program to demonstrate static methods, variables, and blocks
+ */
+
 public class Static {
+
     int id;
     String name;
     static String college = "HNGU";
+
     {
-        System.out.println("static block called...");
+        System.out.println("Static block called...");
     }
 
     static String getName(String name) {
@@ -11,21 +17,21 @@ public class Static {
         return name;
     }
 
-    Static(int i, String n) {
-        id = i;
-        name = n;
-
+    Static(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
-    void res() {
+    void result() {
         System.out.println(id + " " + name + " " + college);
     }
 
     public static void main(String[] args) {
-        Static s1 = new Static(1, "Ravi Vaghela");
-        Static s2 = new Static(2, "Deipak Parmar");
-        s1.res();
-        s2.res();
+        Static staticObject1 = new Static(1, "Ravi Vaghela");
+        Static staticObject2 = new Static(2, "Deipak Parmar");
+        staticObject1.result();
+        staticObject2.result();
         Static.getName("Juned");
     }
+
 }

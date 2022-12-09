@@ -1,3 +1,7 @@
+/*
+ * program to demonstrate the use of while loop and do while loop
+ */
+
 public class DoWhileLoop {
 
     public static void main(String[] args) {
@@ -9,4 +13,5 @@ public class DoWhileLoop {
             i++;
         } while (i <= 10);
     }
+
 }

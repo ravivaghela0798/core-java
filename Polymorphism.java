@@ -1,29 +1,40 @@
+/*
+ * program to demonstrate two types of polymorphism 
+ * like compile-time and runtime polymorphism
+ */
+
 class Parent {
+
     void Print() {
-        System.out.println("parent class");
+        System.out.println("Parent class");
     }
+
 }
 
-class subclass1 extends Parent {
+class SubClass1 extends Parent {
+
     void Print() {
-        System.out.println("subclass1");
+        System.out.println("Subclass1");
     }
+
 }
 
-class subclass2 extends Parent {
+class SubClass2 extends Parent {
+
     void Print() {
-        System.out.println("subclass2");
+        System.out.println("Subclass2");
     }
+
 }
 
 public class Polymorphism {
+
     public static void main(String[] args) {
-        Parent a;
+        Parent parentObject = new SubClass1();
+        parentObject.Print();
 
-        a = new subclass1();
-        a.Print();
-
-        a = new subclass2();
-        a.Print();
+        parentObject = new SubClass2();
+        parentObject.Print();
     }
+
 }

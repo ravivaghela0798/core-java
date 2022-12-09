@@ -1,4 +1,10 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+/*
+ * Comparater program for sorting object by any proprerty from the object using Comparator interface 
+ */
 
 class Person {
     String name;
@@ -19,8 +25,8 @@ class Person {
 class AgeComparator implements Comparator<Person> {
 
     @Override
-    public int compare(Person o1, Person o2) {
-        return o1.age - o2.age;
+    public int compare(Person personObject1, Person personObject2) {
+        return personObject1.age - personObject2.age;
     }
 
 }
@@ -28,22 +34,24 @@ class AgeComparator implements Comparator<Person> {
 class NameComparator implements Comparator<Person> {
 
     @Override
-    public int compare(Person o1, Person o2) {
-        return o1.name.compareTo(o2.name);
+    public int compare(Person personObject1, Person personObject2) {
+        return personObject1.name.compareTo(personObject2.name);
     }
 }
 
 public class ComparatorProgram {
-    public static void main(String[] args) {
-        ArrayList<Person> list = new ArrayList<>();
-        list.add(new Person("Vaghela Ravi", 24));
-        list.add(new Person("Paramr Dipak", 23));
-        list.add(new Person("Davda Juned", 23));
 
-        System.out.println("Person List as it is : " + list);
-        Collections.sort(list, new AgeComparator());
-        System.out.println("Sorting by Age : " + list);
-        Collections.sort(list, new NameComparator());
-        System.out.println("Sorting by Name" + list);
+    public static void main(String[] args) {
+        ArrayList<Person> personList = new ArrayList<>();
+        personList.add(new Person("Vaghela Ravi", 24));
+        personList.add(new Person("Paramr Dipak", 23));
+        personList.add(new Person("Davda Juned", 23));
+
+        System.out.println("Person List as it is : " + personList);
+        Collections.sort(personList, new AgeComparator());
+        System.out.println("Sorting by Age : " + personList);
+        Collections.sort(personList, new NameComparator());
+        System.out.println("Sorting by Name" + personList);
     }
+
 }

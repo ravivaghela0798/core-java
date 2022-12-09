@@ -1,4 +1,9 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+
+/*
+ * Comparable program for sorting object by any one proprerty from the object using Comparable interface 
+ */
 
 class Person implements Comparable<Person> {
     String name;
@@ -12,13 +17,6 @@ class Person implements Comparable<Person> {
     @Override
     public int compareTo(Person person) {
         return this.age - person.age;
-        // if (age == person.age) {
-        // return 0;
-        // } else if (age > person.age) {
-        // return 1;
-        // } else {
-        // return -1;
-        // }
     }
 
     @Override
@@ -28,16 +26,18 @@ class Person implements Comparable<Person> {
 }
 
 public class ComparableProgram {
-    public static void main(String args[]) {
-        ArrayList<Person> list = new ArrayList<>();
-        list.add(new Person("Ravi", 24));
-        list.add(new Person("Dipak", 23));
-        list.add(new Person("Juned", 23));
 
-        System.out.println(list);
-        Collections.sort(list);
-        for (Person person : list) {
+    public static void main(String args[]) {
+        ArrayList<Person> personList = new ArrayList<>();
+        personList.add(new Person("Ravi", 24));
+        personList.add(new Person("Dipak", 23));
+        personList.add(new Person("Juned", 23));
+
+        System.out.println("Person List : " + personList);
+        Collections.sort(personList);
+        for (Person person : personList) {
             System.out.println(person.name + " " + person.age);
         }
     }
+
 }

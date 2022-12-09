@@ -1,4 +1,10 @@
+/*
+ * extends abstract method and override method from Shape abstract class 
+ * and provide implementation in this Ractangle class
+ */
+
 class Rectangle extends Shape {
+
     double length;
     double width;
 
@@ -18,4 +24,5 @@ class Rectangle extends Shape {
     public String toString() {
         return "Rectangle color is " + super.getColor() + "and area is : " + area();
     }
+
 }

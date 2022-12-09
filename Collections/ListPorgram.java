@@ -1,30 +1,28 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class ListPorgram {
-    public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Ravi Vaghela");
-        list.add("Dipak Paramar");
-        list.add("Juned Davda");
+/*
+ * List Program for creating Arraylist and Add data and iterate Arraylist and print values 
+ */
 
-        System.out.println(list);
-        for (String name : list) {
+public class ListPorgram {
+
+    public static void main(String[] args) {
+        ArrayList<String> personList = new ArrayList<>();
+        personList.add("Ravi Vaghela");
+        personList.add("Dipak Paramar");
+        personList.add("Juned Davda");
+
+        System.out.println(personList);
+        for (String name : personList) {
             System.out.println(name);
         }
 
-        List<Character> list2 = new ArrayList<>(Arrays.asList('A', 'B', 'C', 'D', 'A', 'C', 'E', 'E', 'E'));
-        // list2.add('A');
-        // list2.add('B');
-        // list2.add('C');
-        // list2.add('D');
-        // list2.add('A');
-        // list2.add('C');
-        // list2.add('E');
-        // list2.add('E');
-        // list2.add('E');
-        System.out.println(list2);
-        List<Character> newList = list2.stream().distinct().collect(Collectors.toList());
-        System.out.println(newList);
+        List<Character> characterList = new ArrayList<>(Arrays.asList('A', 'B', 'C', 'D', 'A', 'C', 'E', 'E', 'E'));
+
+        System.out.println(characterList);
+        List<Character> uniqueCharacterList = characterList.stream().distinct().collect(Collectors.toList());
+        System.out.println(uniqueCharacterList);
     }
+
 }

@@ -1,9 +1,15 @@
-public class WrapperClass {
-    public static void main(String[] args) {
-        int a = 10;
-        Integer b = 10;
+/*
+ * practical to compare two variables of Wrapper class using Wrapper classes
+ */
 
-        System.out.println(a == b);
-        System.out.println(b.equals(a));
+public class WrapperClass {
+
+    public static void main(String[] args) {
+        int aIntValue = 10;
+        Integer bIntegerValue = 10;
+
+        System.out.println(aIntValue == bIntegerValue);
+        System.out.println(bIntegerValue.equals(aIntValue));
     }
+
 }

@@ -1,4 +1,9 @@
+/*
+ * program to demonstrate the example of a break/Continue statement
+ */
+
 public class BreakContinue {
+
     public static void main(String[] args) {
         for (int i = 1; i <= 10; i++) {
             // when i = 5 then skip 5 number

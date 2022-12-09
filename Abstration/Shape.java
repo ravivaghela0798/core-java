@@ -1,7 +1,13 @@
+/*
+ * Create abstract method and not abstract methods for achieving the data hiding and improving security
+ */
+
 abstract class Shape {
+
     String color;
 
     abstract double area();
+
     public abstract String toString();
 
     public Shape(String color) {
@@ -12,4 +18,5 @@ abstract class Shape {
     public String getColor() {
         return color;
     }
+
 }

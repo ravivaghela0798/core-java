@@ -1,4 +1,10 @@
+/*
+ * create class and implements interface 
+ * and provide implementation / override methods in class  
+ */
+
 public class Cricket implements Sports {
+
     @Override
     public void setHomeTeam(String name) {
         System.out.println("Home Team : " + name);
@@ -10,8 +16,9 @@ public class Cricket implements Sports {
     }
 
     public static void main(String[] args) {
-        Cricket cricket = new Cricket();
-        cricket.setHomeTeam("India");
-        cricket.setVisitingTeam("Australia");
+        Cricket cricketObject = new Cricket();
+        cricketObject.setHomeTeam("India");
+        cricketObject.setVisitingTeam("Australia");
     }
+
 }

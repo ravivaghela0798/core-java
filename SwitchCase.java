@@ -1,48 +1,54 @@
+/*
+ *  find the current month name from the given number of the switch case
+ */
+
 public class SwitchCase {
+
     public static void main(String[] args) {
         // Initialize variable for current month and assign value to the variable
-        int current_Month = 15;
+        int currentMonth = 15;
 
         // Pass the current_month variable in Switch expression
-        switch (current_Month) {
+        switch (currentMonth) {
             case 1:
-                System.out.println("Current Month is January");
+                System.out.println("Current month is January");
                 break;
             case 2:
-                System.out.println("Current Month is February");
+                System.out.println("Current month is February");
                 break;
             case 3:
-                System.out.println("Current Month is March");
+                System.out.println("Current month is March");
                 break;
             case 4:
-                System.out.println("Current Month is April");
+                System.out.println("Current month is April");
                 break;
             case 5:
-                System.out.println("Current Month is May");
+                System.out.println("Current month is May");
                 break;
             case 6:
-                System.out.println("Current Month is June");
+                System.out.println("Current month is June");
                 break;
             case 7:
-                System.out.println("Current Month is July");
+                System.out.println("Current month is July");
                 break;
             case 8:
-                System.out.println("Current Month is Augest");
+                System.out.println("Current month is Augest");
                 break;
             case 9:
-                System.out.println("Current Month is September");
+                System.out.println("Current month is September");
                 break;
             case 10:
-                System.out.println("Current Month is October");
+                System.out.println("Current month is October");
                 break;
             case 11:
-                System.out.println("Current Month is November");
+                System.out.println("Current month is November");
                 break;
             case 12:
-                System.out.println("Current Month is December");
+                System.out.println("Current month is December");
                 break;
             default:
-                System.out.println("Please Enter Valid Month No!");
+                System.out.println("Please Enter Valid month No!");
         }
     }
+
 }

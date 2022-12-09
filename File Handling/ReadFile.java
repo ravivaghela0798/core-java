@@ -2,14 +2,18 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+/*
+ * Read file for read data from text file using Scanner class  
+ */
 public class ReadFile {
+
     public static void main(String[] args) {
         try {
-            File Obj = new File("myTestFile.txt");
-            Scanner Reader = new Scanner(Obj);
+            File fileObject = new File("myTestFile.txt");
+            Scanner Reader = new Scanner(fileObject);
             while (Reader.hasNextLine()) {
-                String data = Reader.nextLine();
-                System.out.println(data);
+                String readData = Reader.nextLine();
+                System.out.println(readData);
             }
             Reader.close();
         } catch (IOException e) {
@@ -17,4 +21,5 @@ public class ReadFile {
             e.printStackTrace();
         }
     }
+
 }
