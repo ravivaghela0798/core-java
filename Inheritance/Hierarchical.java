@@ -17,7 +17,11 @@ class Cat extends Animal {
 }
 
 public class Hierarchical {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.bark();
+        d.eat();
+
         Cat c = new Cat();
         c.meow();
         c.eat();

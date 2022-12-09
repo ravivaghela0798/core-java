@@ -13,11 +13,11 @@ class Person implements Comparable<Person> {
     public int compareTo(Person person) {
         return this.age - person.age;
         // if (age == person.age) {
-        //     return 0;
+        // return 0;
         // } else if (age > person.age) {
-        //     return 1;
+        // return 1;
         // } else {
-        //     return -1;
+        // return -1;
         // }
     }
 
