@@ -1,10 +1,10 @@
 public class SwitchCase {
     public static void main(String[] args) {
-        //Initialize variable for current month and assign value to the variable
+        // Initialize variable for current month and assign value to the variable
         int current_Month = 15;
-        
-        // Pass the current_month variable in Switch expression  
-        switch(current_Month) {
+
+        // Pass the current_month variable in Switch expression
+        switch (current_Month) {
             case 1:
                 System.out.println("Current Month is January");
                 break;
@@ -16,7 +16,7 @@ public class SwitchCase {
                 break;
             case 4:
                 System.out.println("Current Month is April");
-                break;  
+                break;
             case 5:
                 System.out.println("Current Month is May");
                 break;
@@ -44,7 +44,5 @@ public class SwitchCase {
             default:
                 System.out.println("Please Enter Valid Month No!");
         }
-
     }
-    
 }

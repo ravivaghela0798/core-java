@@ -5,10 +5,11 @@ public class ArrayProgram {
         int len = array.length;
         int i = 0;
         while (i < len) {
-            if (array[i] == t)
+            if (array[i] == t) {
                 return i;
-            else
+            } else {
                 i = i + 1;
+            }
         }
         return -1;
     }

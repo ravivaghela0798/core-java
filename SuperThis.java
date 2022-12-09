@@ -1,9 +1,10 @@
-class Super{
+class Super {
     int a = 50;
     int b = 100;
 }
+
 public class SuperThis extends Super {
-    void res(){
+    void res() {
         int a = 1000;
         int b = 5000;
         System.out.println(super.a);
@@ -11,6 +12,7 @@ public class SuperThis extends Super {
         System.out.println(super.b);
         System.out.println(b);
     }
+
     public static void main(String[] args) {
         new SuperThis().res();
     }

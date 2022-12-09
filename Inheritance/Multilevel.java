@@ -24,4 +24,3 @@ public class Multilevel {
         d.eat();
     }
 }
-

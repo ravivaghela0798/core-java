@@ -6,6 +6,7 @@ public class ListPorgram {
         list.add("Ravi Vaghela");
         list.add("Dipak Paramar");
         list.add("Juned Davda");
+
         System.out.println(list);
         for (String name : list) {
             System.out.println(name);

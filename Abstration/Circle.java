@@ -1,4 +1,4 @@
-class Circle extends Shape{
+class Circle extends Shape {
     double radius;
 
     Circle(String color, double radius) {
@@ -8,12 +8,12 @@ class Circle extends Shape{
     }
 
     @Override
-    double area(){
+    double area() {
         return Math.PI * Math.pow(radius, 2);
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Circle color is " + super.getColor() + "and area is : " + area();
     }
 }

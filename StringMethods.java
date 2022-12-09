@@ -3,10 +3,10 @@ public class StringMethods {
         String str = "Ravi ";
         String str1 = "Vaghela";
         String s = "Tevh";
-        System.out.println("String : "+str);
-        System.out.println("length() : "+ str.length());  
-        System.out.println("charAt(int i) : "+ str.charAt(3)); 
-        System.out.println("subString(int i) : "+ str.substring(3));
+        System.out.println("String : " + str);
+        System.out.println("length() : " + str.length());
+        System.out.println("charAt(int i) : " + str.charAt(3));
+        System.out.println("subString(int i) : " + str.substring(3));
         System.out.println("subString(int i, int i) : " + str.substring(0, 3));
         System.out.println("concate(String s) : " + str.concat(str1));
         System.out.println("int indexOf(String s) : " + str.indexOf("i "));
